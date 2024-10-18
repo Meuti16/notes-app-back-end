@@ -4,7 +4,9 @@ import daStyle from 'eslint-config-dicodingacademy';
 
 export default [
   daStyle,
-  {files: ["**/*.js"], languageOptions: {sourceType: "commonjs"}},
-  {languageOptions: { globals: globals.browser }},
+  {files: ['**/*.js'], languageOptions: {sourceType: "commonjs"}},
+  {languageOptions: { globals: globals.browser,
+    process: true,
+   }},
   pluginJs.configs.recommended,
 ];
